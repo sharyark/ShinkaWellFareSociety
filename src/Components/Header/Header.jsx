@@ -4,21 +4,21 @@ import logo from "./logo.jpeg";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 
 export const ABOUT = [
-  { name: "Mission Statement", link: "#" },
-  { name: "Team", link: "#" },
-  { name: "History", link: "#" },
+  { name: "Mission Statement", link: "/mission" },
+  { name: "Team", link: "team" },
+  { name: "History", link: "history" },
 ];
 export const SERVICES = [
-  { name: "Our Programs", link: "#" },
-  { name: "Success Stories", link: "#" },
-  { name: "Blog", link: "#" },
-  { name: "Events", link: "#" },
-  { name: "Volunteer Opportunities", link: "#" },
+  { name: "Our Programs", link: "ourprogram" },
+  { name: "Success Stories", link: "successstory" },
+  { name: "Blog", link: "blog" },
+  { name: "Events", link: "event" },
+  { name: "Volunteer Opportunities", link: "volunteer" },
 ];
 export const CONTACT = [
-  { name: "Facebook", link: "#" },
-  { name: "Instagram", link: "#" },
-  { name: "YouTube", link: "#" },
+  { name: "Facebook", link: "fb" },
+  { name: "Instagram", link: "insta" },
+  { name: "YouTube", link: "youtube" },
 ];
 
 function Header() {
