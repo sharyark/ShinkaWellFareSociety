@@ -61,8 +61,9 @@ function AmbulanceService() {
           </div>
         </div>
         <div className="md:w-1/2 md:ml-auto flex flex-col justify-center">
-  <img src={ambulanceImage} alt="Ambulance" className="rounded-lg mb-8 mx-auto" style={{ maxWidth: '400px' }} />
+  <img src={ambulanceImage} alt="Ambulance" className="rounded-lg mb-8 mx-auto" style={{ maxWidth: '100%' }} />
 </div>
+
     
       </div>
       <div className="bg-gray-100 rounded-md p-6 mt-6">

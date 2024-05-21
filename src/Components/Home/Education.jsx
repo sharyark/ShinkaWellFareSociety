@@ -62,9 +62,9 @@ function EducationalFunds() {
             </p>
           </div>
         </div>
-        <div className="md:w-5/12 md:ml-auto flex flex-col justify-center">
-          <img src={educationImage} alt="Educational Funds" className="rounded-lg mb-8 mx-auto" style={{ maxWidth: '400px' }} />
-        </div>
+        <div className="md:w-1/2 md:ml-auto flex flex-col justify-center">
+  <img src={educationImage} alt="education" className="rounded-lg mb-8 mx-auto" style={{ maxWidth: '100%' }} />
+</div>
       </div>
       <div className="bg-gray-100 rounded-md p-6 mt-6">
         <h3 className="text-xl font-bold mb-4">Project Bookkeeping</h3>
