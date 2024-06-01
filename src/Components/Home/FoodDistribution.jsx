@@ -50,7 +50,7 @@ function FoodDistribution() {
     <div className="container mx-auto my-10 px-4">
       <div className="md:flex md:justify-between">
         <div className="md:w-5/12 md:pr-4">
-          <h2 className="text-3xl font-bold text-center md:text-left mb-6">Food Distribution</h2>
+          <h2 className="text-3xl font-bold text-center md:text-left mb-6">Ramzan package</h2>
           <div className="mb-4 md:text-left">
             <p className="text-lg mb-4">
               Our food distribution program is conducted during the holy month of Ramadan. We aim to provide nutritious food packages to families in need, ensuring they have sufficient food supplies for the entire month.

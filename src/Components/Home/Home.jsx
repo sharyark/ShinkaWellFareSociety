@@ -1,6 +1,7 @@
 import React from 'react';
 import Corusel from './Corusel/Corusel';
 import { FaAmbulance, FaWater, FaSplotch, FaUtensils, FaGraduationCap, FaBed } from 'react-icons/fa';
+import AboutUs from './AboutUs/AboutUs';
 
 // Define service data
 const servicesData = [
@@ -46,6 +47,8 @@ function Home() {
   return (
     <>
       <Corusel />
+      <AboutUs />
+
       <section className="container mx-auto my-10 px-4">
         <h2 className="text-2xl font-bold text-center mb-6">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6">
