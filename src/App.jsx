@@ -14,6 +14,7 @@ import FreeFilteredWater from './Components/Home/Water';
 import FoodDistribution from './Components/Home/FoodDistribution';
 import EducationalFunds from './Components/Home/Education';
 import BurialFunds from './Components/Home/Burial';
+import Team from './Components/Team/Team';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/food" element={<FoodDistribution/>} />
           <Route path="/educational" element={<EducationalFunds/>} />
           <Route path="/burial" element={<BurialFunds/>} />
+          <Route path="/team" element={<Team/>} />
         </Routes>
       <Footer />
         </div>
