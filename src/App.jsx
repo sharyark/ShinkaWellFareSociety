@@ -15,6 +15,7 @@ import FoodDistribution from './Components/Home/FoodDistribution';
 import EducationalFunds from './Components/Home/Education';
 import BurialFunds from './Components/Home/Burial';
 import Team from './Components/Team/Team';
+import Financial from './Components/Financial/Financial';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/educational" element={<EducationalFunds/>} />
           <Route path="/burial" element={<BurialFunds/>} />
           <Route path="/team" element={<Team/>} />
+          <Route path="/financial" element={<Financial/>} />
         </Routes>
       <Footer />
         </div>

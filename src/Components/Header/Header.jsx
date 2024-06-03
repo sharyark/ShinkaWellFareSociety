@@ -35,6 +35,8 @@ function Header() {
       name: "Home",
       url: "/"
     },
+    
+   
     {
       name: "About",
       submenu: ABOUT,
@@ -42,6 +44,10 @@ function Header() {
     {
       name: "Services",
       submenu: SERVICES,
+    },
+    {
+      name: "Financial Transparency",
+      url: "/financial"
     },
     {
       name: "Contact Us",

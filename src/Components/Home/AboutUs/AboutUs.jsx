@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <section className="container mx-auto my-10 px-4">
       <h2 className="text-2xl font-bold text-center mb-6">About Our Trust</h2>
-      <div className="bg-white p-6 rounded-lg shadow-lg">
+      <div className="bg-gray-200 p-6 rounded-lg shadow-lg">
         <div className="mb-6 text-center">
           <p className="text-lg text-gray-700 leading-relaxed">
             We are a dedicated welfare trust working to improve the lives of villagers in Shinka. Our mission is to provide essential services, support, and opportunities to enhance the well-being and prosperity of the community.

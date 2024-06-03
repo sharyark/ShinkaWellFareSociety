@@ -1,14 +1,11 @@
 export const ABOUT = [
-  { name: "Mission Statement", link: "#" },
-  { name: "Team", link: "#" },
-  { name: "History", link: "#" },
+  { name: "Mission Statement", link: "/mission" },
+  { name: "Team", link: "/team" },
+  { name: "History", link: "/history" },
 ];
 export const SERVICES = [
   { name: "Our Programs", link: "#" },
   { name: "Success Stories", link: "#" },
-  { name: "Blog", link: "#" },
-  { name: "Events", link: "#" },
-  { name: "Volunteer Opportunities", link: "#" },
 ];
 
 export const CONTACT = [
