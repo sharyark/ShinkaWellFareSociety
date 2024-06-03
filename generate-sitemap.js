@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 async function generateSitemap() {
-  const sitemap = new SitemapStream({ hostname: 'https://yourdomain.com' });
+  const sitemap = new SitemapStream({ hostname: 'https://www.shinkawelfare.online/' });
 
   const writeStream = createWriteStream(path.join(__dirname, 'public', 'sitemap.xml'));
   sitemap.pipe(writeStream);
