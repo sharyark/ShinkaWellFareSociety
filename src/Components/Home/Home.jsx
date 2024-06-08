@@ -2,6 +2,7 @@ import React from 'react';
 import Corusel from './Corusel/Corusel';
 import { FaAmbulance, FaWater, FaSplotch, FaUtensils, FaGraduationCap, FaBed } from 'react-icons/fa';
 import AboutUs from './AboutUs/AboutUs';
+import ContactNumber from './ContactNumber';
 
 // Define service data
 const servicesData = [
@@ -46,6 +47,8 @@ const servicesData = [
 function Home() {
   return (
     <>
+      <ContactNumber />
+
       <Corusel />
       <AboutUs />
 

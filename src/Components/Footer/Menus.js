@@ -9,9 +9,9 @@ export const SERVICES = [
 ];
 
 export const CONTACT = [
-  { name: "Facebook", link: "#" },
+  { name: "Facebook", link: "https://web.facebook.com/profile.php?id=100070742473712" },
   { name: "Instagram", link: "#" },
-  { name: "YouTube", link: "#" },
+  { name: "YouTube", link: "https://www.youtube.com/@Shinka455" },
 ];
 export const SUPPORT = [
   { name: "Documentation", link: "#" },

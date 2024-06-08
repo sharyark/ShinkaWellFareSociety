@@ -7,7 +7,7 @@ import logo from "./logo.jpeg";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 
 export const ABOUT = [
-  { name: "Mission Statement", link: "/mission" },
+  {name : "About Us", link : "/about"},
   { name: "Team", link: "team" },
   { name: "History", link: "history" },
 ];
@@ -20,9 +20,10 @@ export const SERVICES = [
   { name: "Burial Funds", link: "burial" },
 ];
 export const CONTACT = [
-  { name: "Facebook", link: "fb" },
+  {name: "Contact Us", link : "/contact"},
+  { name: "Facebook", link: "https://web.facebook.com/profile.php?id=100070742473712" },
   { name: "Instagram", link: "insta" },
-  { name: "YouTube", link: "youtube" },
+  { name: "YouTube", link: "https://www.youtube.com/@Shinka455" },
 ];
 
 function Header() {
