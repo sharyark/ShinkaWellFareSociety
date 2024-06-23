@@ -4,8 +4,8 @@ export const ABOUT = [
   { name: "History", link: "/history" },
 ];
 export const SERVICES = [
-  { name: "Our Programs", link: "#" },
-  { name: "Success Stories", link: "#" },
+  { name: "Our Programs", link: "/service" },
+  { name: "Success Stories", link: "/ourprogram" },
 ];
 
 export const CONTACT = [

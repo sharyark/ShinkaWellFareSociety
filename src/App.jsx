@@ -5,7 +5,7 @@ import {   Routes, Route} from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
-import Service from './Components/Services/Service';
+import Service from './Components/Ourprogram/Services/Service';
 import ContactUs from './Components/ContactUs/ContactUs';
 import Dnote from './Components/Donate/Dnote';
 import AmbulanceService from './Components/Home/Ambulance';
@@ -17,6 +17,8 @@ import BurialFunds from './Components/Home/Burial';
 import Team from './Components/Team/Team';
 import Financial from './Components/Financial/Financial';
 import HistoryTrust from './Components/History/HistoryTrust';
+import Mission from './Components/Mission/Mission';
+import Joinus from './Components/Joinus/Joinus';
 
 
 function App() {
@@ -41,7 +43,8 @@ function App() {
           <Route path="/team" element={<Team/>} />
           <Route path="/financial" element={<Financial/>} />
           <Route path="/history" element={<HistoryTrust/>} />
-          {/* <Route path="/contact" element={<ContactUs/>} /> */}
+          <Route path="/mission" element={<Mission/>} />
+          <Route path="/joinus" element={<Joinus/>} />
         </Routes>
       <Footer />
         </div>
