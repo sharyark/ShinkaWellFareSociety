@@ -64,7 +64,7 @@ function FoodDistribution() {
   <img src={foodImage} alt="food" className="rounded-lg mb-8 mx-auto" style={{ maxWidth: '100%' }} />
 </div>
       </div>
-      <div className="bg-gray-100 rounded-md p-6 mt-6">
+      {/* <div className="bg-gray-100 rounded-md p-6 mt-6">
         <h3 className="text-xl font-bold mb-4">Project Bookkeeping</h3>
         <p className="mb-4">Here is the financial overview of our food distribution project:</p>
         <div>
@@ -75,7 +75,7 @@ function FoodDistribution() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

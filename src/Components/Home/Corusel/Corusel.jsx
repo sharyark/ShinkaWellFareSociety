@@ -97,9 +97,10 @@ import React, { useState, useEffect } from 'react';
 import image1 from '../images/image1.png';
 import image2 from '../images/image2.png';
 import image3 from '../images/image3.jpg';
+import image4 from '../images/pic1.png';
 
 function Corusel() {
-  const images = [image1, image2, image3];
+  const images = [image1, image2, image3,image4];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {

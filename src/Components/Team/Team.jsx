@@ -13,7 +13,7 @@ const teamMembers = [
   { name: "Shabeer Mehmood", title: "Naib Saddar", imgSrc: shabirmehmood },
   { name: "Saeed Ahmed Khan", title: "Founder&Financial Secretary", imgSrc: saeed },
   { name: "Muhammad Saad", title: " General Secretary", imgSrc: saad },
-  { name: "Muhammad Saad", title: " Secretary of Public affairs", imgSrc: akhter  },
+  { name: "Muhammad akhter", title: " Secretary of Public affairs", imgSrc: akhter  },
   // Add more members as needed
 ];
 

@@ -67,7 +67,7 @@ function BurialFunds() {
 </div>
 
       </div>
-      <div className="bg-gray-100 rounded-md p-6 mt-6">
+      {/* <div className="bg-gray-100 rounded-md p-6 mt-6">
         <h3 className="text-xl font-bold mb-4">Project Bookkeeping</h3>
         <p className="mb-4">Here is the financial overview of our burial fund project:</p>
         <div>
@@ -78,7 +78,7 @@ function BurialFunds() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

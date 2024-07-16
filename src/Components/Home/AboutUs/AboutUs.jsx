@@ -14,7 +14,7 @@ const AboutUs = () => {
       {/* Accident Details Section */}
       <section className="mb-12">
         <p className="text-xl text-gray-900 leading-relaxed">
-      <strong> Shinka Welfare Society </strong>  is a non-profit charitable organization dedicated to uplifting our community. Registered since 2019, we conduct emergency relief operations during natural or man-made disasters. We also focus on long-term healthcare programs, community support, and education & poverty alleviation initiatives. Our journey began with a few kind-hearted individuals in our village, determined to help the less fortunate, particularly by providing an effective ambulance service, RO filtered water, sanitation, and many more essential services.    </p>
+      <strong> Shinka Welfare Society </strong>  is a non-profit charitable organization dedicated to uplifting our community. Registered since 2019, we conduct emergency relief operations during  man-made disasters. We also focus on long-term healthcare programs, community support, and education & poverty alleviation initiatives. Our journey began with a few kind-hearted individuals in our village, determined to help the less fortunate, particularly by providing an effective ambulance service, RO filtered water, sanitation, and many more essential services.    </p>
         <br />
         <a href="/about">read more</a>
       </section>

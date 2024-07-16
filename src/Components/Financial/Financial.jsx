@@ -29,7 +29,7 @@ const Financial = () => {
       </h1>
 
       <div className="mb-4">
-        <label htmlFor="monthSelector" className="mr-2">Select Month:</label>
+        <label htmlFor="monthSelector" className="mr-2" ><strong>Select desired Month to see book keeping :</strong></label>
         <select id="monthSelector" value={selectedMonth} onChange={handleMonthChange} className="px-4 py-2 border rounded">
           <option value="jan2024">January 2024</option>
           <option value="feb2024">February 2024</option>

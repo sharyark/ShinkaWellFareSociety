@@ -16,15 +16,15 @@ const ContactUs = () => {
                     <div className="mb-8">
                         <h3 className="text-xl font-semibold mb-2 text-center">Email Addresses:</h3>
                         <p className="text-lg text-center">
-                            General Inquiries: <a href="mailto:info@example.com" className="text-blue-500 hover:text-blue-700">info@example.com</a><br />
-                            Support: <a href="mailto:support@example.com" className="text-blue-500 hover:text-blue-700">support@example.com</a>
+                            General Inquiries: <a href="mailto:info@example.com" className="text-blue-500 hover:text-blue-700">zaman14268@gmail.com</a><br />
+                            Support: <a href="mailto:support@example.com" className="text-blue-500 hover:text-blue-700">zaman14268@gmail.com</a>
                         </p>
                     </div>
                     <div>
                         <h3 className="text-xl font-semibold mb-2 text-center">Follow Us:</h3>
                         <div className="flex justify-center space-x-4">
-                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out transform hover:scale-110">YouTube</a>
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out transform hover:scale-110">Facebook</a>
+                            <a href="https://www.youtube.com/@Shinka455/featured" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out transform hover:scale-110">YouTube</a>
+                            <a href="https://www.facebook.com/profile.php?id=100070742473712" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out transform hover:scale-110">Facebook</a>
                         </div>
                     </div>
                 </div>
