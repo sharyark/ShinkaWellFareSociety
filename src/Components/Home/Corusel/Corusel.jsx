@@ -105,7 +105,6 @@ import image8 from '../images/image8.jpg';
 import image9 from '../images/image9.jpg';
 import image10 from '../images/image10.jpg';
 
-
 function Corusel() {
   const images = [ image3,image4,image8,image9,image10];
   const [currentIndex, setCurrentIndex] = useState(0);
