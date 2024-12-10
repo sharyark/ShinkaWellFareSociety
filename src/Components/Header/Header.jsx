@@ -18,6 +18,7 @@ export const SERVICES = [
   { name: "Food Distribution", link: "food" },
   { name: "Educational funds", link: "educational" },
   { name: "Burial Funds", link: "burial" },
+  { name: "All Services..", link: "service" },
 ];
 export const CONTACT = [
   {name: "Contact Us", link : "/contact"},

@@ -15,12 +15,12 @@ const projectBookkeeping = {
 
 function AmbulanceService() {
   // Function to calculate total expenditure and remaining funds for a year
-  const calculateYearlyTotal = (year) => {
-    const yearlyData = projectBookkeeping.monthlyData.filter(data => data.year === year);
-    const totalExpenditure = yearlyData.reduce((total, data) => total + parseFloat(data.expenditure.replace('$', '').replace(',', '')), 0);
-    const totalRemainingFunds = yearlyData.reduce((total, data) => total + parseFloat(data.remainingFunds.replace('$', '').replace(',', '')), 0);
-    return { totalExpenditure, totalRemainingFunds };
-  };
+  // const calculateYearlyTotal = (year) => {
+  //   const yearlyData = projectBookkeeping.monthlyData.filter(data => data.year === year);
+  //   const totalExpenditure = yearlyData.reduce((total, data) => total + parseFloat(data.expenditure.replace('$', '').replace(',', '')), 0);
+  //   const totalRemainingFunds = yearlyData.reduce((total, data) => total + parseFloat(data.remainingFunds.replace('$', '').replace(',', '')), 0);
+  //   return { totalExpenditure, totalRemainingFunds };
+  // };
 
   // Function to render monthly data for a specific year
   const renderMonthlyData = (year) => {

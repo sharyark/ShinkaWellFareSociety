@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaAmbulance, FaWater, FaSplotch, FaUtensils, FaGraduationCap, FaBed } from 'react-icons/fa';
+import { FaAmbulance, FaWater, FaBroom, FaUtensils, FaGraduationCap, FaBed, FaShieldAlt, FaHome, FaRing } from 'react-icons/fa';
 
 const servicesData = [
   {
     icon: <FaAmbulance className="text-5xl text-blue-500 mb-4" />,
     title: "Ambulance Service",
     description: "We provide free ambulance services for emergencies and medical transport.",
-    link: "/abulance"
+    link: "/ambulance"
   },
   {
     icon: <FaWater className="text-5xl text-blue-500 mb-4" />,
@@ -16,7 +16,7 @@ const servicesData = [
     link: "/water"
   },
   {
-    icon: <FaSplotch className="text-5xl text-blue-500 mb-4" />,
+    icon: <FaBroom className="text-5xl text-blue-500 mb-4" />,
     title: "Cleanliness Project",
     description: "Our cleanliness project aims to keep our community clean and hygienic.",
     link: "/cleanliness"
@@ -38,6 +38,24 @@ const servicesData = [
     title: "Burial Funds",
     description: "Assistance for funeral and burial expenses for families in need.",
     link: "/burial"
+  },
+  {
+    icon: <FaShieldAlt className="text-5xl text-blue-500 mb-4" />,
+    title: "Security System",
+    description: "To reduce the risk of security threats.",
+    link: "/security"
+  },
+  {
+    icon: <FaHome className="text-5xl text-blue-500 mb-4" />,
+    title: "Eid ul Adha",
+    description: "Special programs during Eid ul Adha to help the community.",
+    link: "/eiduladha"
+  },
+  {
+    icon: <FaRing className="text-5xl text-blue-500 mb-4" />,
+    title: "Marriage",
+    description: "Providing financial support for marriages of deserving individuals.",
+    link: "/marriage"
   }
 ];
 

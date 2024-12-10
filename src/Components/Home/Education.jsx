@@ -1,83 +1,66 @@
-import React from 'react';
+import React, { useState } from 'react';
 import educationImage from './images/studyfund.png';
 
-// Project Bookkeeping data
-const projectBookkeeping = {
-  totalDonations: "$20,000",
-  expenditure: "$18,000",
-  remainingFunds: "$2,000",
-  monthlyData: [
-    { month: "January", year: "2023", expenditure: "$3,000", remainingFunds: "$1,000" },
-    { month: "March", year: "2023", expenditure: "$4,000", remainingFunds: "$500" },
-    { month: "June", year: "2023", expenditure: "$5,000", remainingFunds: "$500" },
-    { month: "September", year: "2023", expenditure: "$6,000", remainingFunds: "$0" },
-    // Add more monthly data as needed
-  ]
-};
-
 function EducationalFunds() {
-  // Function to calculate total expenditure and remaining funds for a year
-  const calculateYearlyTotal = (year) => {
-    const yearlyData = projectBookkeeping.monthlyData.filter(data => data.year === year);
-    const totalExpenditure = yearlyData.reduce((total, data) => total + parseFloat(data.expenditure.replace('$', '').replace(',', '')), 0);
-    const totalRemainingFunds = yearlyData.reduce((total, data) => total + parseFloat(data.remainingFunds.replace('$', '').replace(',', '')), 0);
-    return { totalExpenditure, totalRemainingFunds };
+  const [language, setLanguage] = useState('urdu');
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'urdu' ? 'english' : 'urdu');
   };
 
-  // Function to render monthly data for a specific year
-  const renderMonthlyData = (year) => {
-    const yearlyData = projectBookkeeping.monthlyData.filter(data => data.year === year);
-    return (
-      <>
-        {yearlyData.map((data, index) => (
-          <div key={index} className="border border-gray-300 rounded-md p-2 mb-2 bg-white">
-            <p className="mb-1"><strong>Month:</strong> {data.month}</p>
-            <p className="mb-1"><strong>Expenditure:</strong> {data.expenditure}</p>
-            <p className="mb-1"><strong>Remaining Funds:</strong> {data.remainingFunds}</p>
-          </div>
-        ))}
-        {/* Calculate and display yearly total */}
-        <div className="border border-gray-300 rounded-md p-2 mb-2 bg-white">
-          <p className="mb-1"><strong>Total Expenditure ({year}):</strong> {calculateYearlyTotal(year).totalExpenditure}</p>
-          <p className="mb-1"><strong>Total Remaining Funds ({year}):</strong> {calculateYearlyTotal(year).totalRemainingFunds}</p>
-        </div>
-      </>
-    );
+  const content = {
+    urdu: {
+      title: "تعلیم فنڈ",
+      description1:
+        "گانوں شینکہ کے 635 طلبہ و طالبات کا ٹوٹل تعلیم خرچ شینکہ ویلفیئر سوسائٹی برداشت کر رہی ہے۔ ایک سال کا خرچ 3 لاکھ اسی ہزار روپے آتا ہے۔",
+      description2:
+        "پہلے گانوں شینکہ سے 5 بچیاں کالج جایا کرتی تھیں۔ اب شینکہ ویلفیئر سوسائٹی کی کالج بس کے ذریعے 35 طالبات شینکہ سے حضرو کالج تک سفر کرکے اپنی تعلیم جاری رکھے ہوئے ہیں۔ ان میں سے زیادہ تر طالبات کا تعلق غریب گھرانوں سے ہے۔",
+      description3:
+        "گائوں کی 3 مستحق طالبات علامہ اقبال اوپن یونیورسٹی سے اعلی تعلیم حاصل کر رہی ہیں، جن کو ویلفیئر مکمل سپورٹ کر رہی ہے۔",
+    },
+    english: {
+      title: "Educational Funds",
+      description1:
+        "The total educational expenses for 635 students from Ganon Sheenke are covered by the Sheenka Welfare Society. The annual cost is 380,000 PKR.",
+      description2:
+        "Initially, only 5 girls from Ganon Sheenke used to go to college. Now, with the Sheenka Welfare Society's college bus, 35 girls travel from Sheenke to Hazro College to continue their education, most of whom come from underprivileged families.",
+      description3:
+        "Three deserving girls from the village are pursuing higher education at Allama Iqbal Open University, fully supported by the welfare society.",
+    },
   };
 
-  // Extract unique years from monthly data
-  const years = Array.from(new Set(projectBookkeeping.monthlyData.map(data => data.year)));
+  const currentContent = content[language];
 
   return (
     <div className="container mx-auto my-10 px-4">
+      <div className="flex justify-end mb-4">
+        <button
+          onClick={toggleLanguage}
+          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+        >
+          {language === 'urdu' ? 'Switch to English' : 'اردو میں تبدیل کریں'}
+        </button>
+      </div>
       <div className="md:flex md:justify-between">
         <div className="md:w-5/12 md:pr-4">
-          <h2 className="text-3xl font-bold text-center md:text-left mb-6">Educational Funds</h2>
+          <h2 className="text-3xl font-bold text-center md:text-left mb-6">
+            {currentContent.title}
+          </h2>
           <div className="mb-4 md:text-left">
-            <p className="text-lg mb-4">
-              Our educational fund program is dedicated to supporting students who need financial assistance for their education. We provide scholarships and funding for tuition fees, books, and other educational expenses.
-            </p>
-            <p className="text-lg mb-4">
-              We believe that education is a powerful tool for breaking the cycle of poverty and creating a better future. Transparency and accountability are fundamental to our operations, ensuring that every donation is used to maximize educational opportunities for our beneficiaries.
-            </p>
+            <p className="text-lg mb-4">{currentContent.description1}</p>
+            <p className="text-lg mb-4">{currentContent.description2}</p>
+            <p className="text-lg mb-4">{currentContent.description3}</p>
           </div>
         </div>
         <div className="md:w-1/2 md:ml-auto flex flex-col justify-center">
-  <img src={educationImage} alt="education" className="rounded-lg mb-8 mx-auto" style={{ maxWidth: '100%' }} />
-</div>
-      </div>
-      {/* <div className="bg-gray-100 rounded-md p-6 mt-6">
-        <h3 className="text-xl font-bold mb-4">Project Bookkeeping</h3>
-        <p className="mb-4">Here is the financial overview of our educational fund project:</p>
-        <div>
-          {years.map((year, index) => (
-            <div key={index}>
-              <h4 className="text-lg font-semibold mb-2">{year}</h4>
-              {renderMonthlyData(year)}
-            </div>
-          ))}
+          <img
+            src={educationImage}
+            alt="Educational Funds"
+            className="rounded-lg mb-8 mx-auto"
+            style={{ maxWidth: '100%' }}
+          />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

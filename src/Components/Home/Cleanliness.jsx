@@ -142,11 +142,10 @@ function CleanlinessProject() {
           <h2 className="text-3xl font-bold text-center md:text-left mb-6">Cleanliness Project</h2>
           <div className="mb-4 md:text-left">
             <p className="text-lg mb-4">
-              Our cleanliness project aims to keep our community clean and hygienic. We organize regular cleanup drives and awareness campaigns to promote cleanliness and environmental sustainability.
-            </p>
-            <p className="text-lg mb-4">
+            In the village, 200 trash bins have been placed for proper garbage disposal. A team of 4 sanitation workers is responsible for keeping the area clean. Every day, the streets and alleys are swept thoroughly, and waste is removed from the drains to ensure proper hygiene. The collected garbage is then transported and disposed of in designated areas. On average, one trolley of waste is collected daily. Additionally, the workers regularly sanitize the trash bins and clean public areas to maintain a healthy and safe environment for the residents. Public awareness campaigns are also conducted to encourage responsible waste disposal practices.</p>
+            {/* <p className="text-lg mb-4">
               We believe in the collective responsibility of every individual towards maintaining a clean and healthy environment. Through our project, we strive to create a positive impact and inspire others to join our cause.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="md:w-1/2 md:ml-auto flex flex-col justify-center">

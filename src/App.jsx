@@ -19,8 +19,10 @@ import Financial from './Components/Financial/Financial';
 import HistoryTrust from './Components/History/HistoryTrust';
 import Mission from './Components/Mission/Mission';
 import Joinus from './Components/Joinus/Joinus';
-
-
+import Security from './Components/security/security';
+import EidAlAdha from './Components/eiduladha/eiduladha';
+import Marriage from './Components/marriage/marriage';
+import Ourprogram from './Components/Ourprogram/Ourprogram';
 function App() {
  
 
@@ -45,6 +47,10 @@ function App() {
           <Route path="/history" element={<HistoryTrust/>} />
           <Route path="/mission" element={<Mission/>} />
           <Route path="/joinus" element={<Joinus/>} />
+          <Route path="/security" element={<Security/>} />
+          <Route path="/eiduladha" element={<EidAlAdha/>} />
+          <Route path="/marriage" element={<Marriage/>} />
+          <Route path="/ourprogram" element={<Ourprogram/>} />
         </Routes>
       <Footer />
         </div>
