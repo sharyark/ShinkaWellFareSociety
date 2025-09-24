@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { ViteSitemapPlugin } from "vite-plugin-sitemap";
+import viteSitemapPlugin from "vite-plugin-sitemap";
 
 
 // https://vitejs.dev/config/
@@ -12,8 +12,8 @@ import { ViteSitemapPlugin } from "vite-plugin-sitemap";
 export default defineConfig({
   plugins: [
     react(),
-    ViteSitemapPlugin({
-      hostname: "https://www.shinkawelfaresociety.com", // apni domain
+    viteSitemapPlugin({
+      hostname: "https://www.shinkawelfaresociety.com",
       urls: [
         "/",
         "/home",
@@ -21,7 +21,7 @@ export default defineConfig({
         "/service",
         "/contact",
         "/donate",
-        "/abulance",   // spelling correct
+        "/abulance",
         "/cleanliness",
         "/water",
         "/food",
