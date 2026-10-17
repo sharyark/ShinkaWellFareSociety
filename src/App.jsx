@@ -1,60 +1,49 @@
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
+import Home from './pages/Home';
+import About from './pages/About';
+import Mission from './pages/Mission';
+import History from './pages/History';
+import Team from './pages/Team';
+import Services from './pages/Services';
+import ServicePage from './pages/ServicePage';
+import Financial from './pages/Financial';
+import Contact from './pages/Contact';
+import Donate from './pages/Donate';
+import JoinUs from './pages/JoinUs';
+import NotFound from './pages/NotFound';
+import { SERVICES } from './data/site';
 
-import React from 'react';// Adjust the path based on your file structure
-import Header from './Components/Header/Header';
-import {   Routes, Route} from 'react-router-dom';
-import Home from './Components/Home/Home';
-import Footer from './Components/Footer/Footer';
-import About from './Components/About/About';
-import Service from './Components/Ourprogram/Services/Service';
-import ContactUs from './Components/ContactUs/ContactUs';
-import Dnote from './Components/Donate/Dnote';
-import AmbulanceService from './Components/Home/Ambulance';
-import CleanlinessProject from './Components/Home/Cleanliness';
-import FreeFilteredWater from './Components/Home/Water';
-import FoodDistribution from './Components/Home/FoodDistribution';
-import EducationalFunds from './Components/Home/Education';
-import BurialFunds from './Components/Home/Burial';
-import Team from './Components/Team/Team';
-import Financial from './Components/Financial/Financial';
-import HistoryTrust from './Components/History/HistoryTrust';
-import Mission from './Components/Mission/Mission';
-import Joinus from './Components/Joinus/Joinus';
-import Security from './Components/security/security';
-import EidAlAdha from './Components/eiduladha/eiduladha';
-import Marriage from './Components/marriage/marriage';
-import Ourprogram from './Components/Ourprogram/Ourprogram';
-function App() {
- 
-
+export default function App() {
   return (
-<div className="bg-gray-200">
+    <div className="flex min-h-screen flex-col">
+      <ScrollToTop />
       <Header />
-     <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/home" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/service" element={<Service/>} />
-          <Route path="/contact" element={<ContactUs/>} />
-          <Route path="/donate" element={<Dnote/>} />
-          <Route path="/abulance" element={<AmbulanceService/>} />
-          <Route path="/cleanliness" element={<CleanlinessProject/>} />
-          <Route path="/water" element={<FreeFilteredWater/>} />
-          <Route path="/food" element={<FoodDistribution/>} />
-          <Route path="/educational" element={<EducationalFunds/>} />
-          <Route path="/burial" element={<BurialFunds/>} />
-          <Route path="/team" element={<Team/>} />
-          <Route path="/financial" element={<Financial/>} />
-          <Route path="/history" element={<HistoryTrust/>} />
-          <Route path="/mission" element={<Mission/>} />
-          <Route path="/joinus" element={<Joinus/>} />
-          <Route path="/security" element={<Security/>} />
-          <Route path="/eiduladha" element={<EidAlAdha/>} />
-          <Route path="/marriage" element={<Marriage/>} />
-          <Route path="/ourprogram" element={<Ourprogram/>} />
+      <main className="flex-1">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/mission" element={<Mission />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/service" element={<Services />} />
+          {SERVICES.map((s) => (
+            <Route key={s.slug} path={`/${s.slug}`} element={<ServicePage slug={s.slug} />} />
+          ))}
+          <Route path="/financial" element={<Financial />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/joinus" element={<JoinUs />} />
+          {/* legacy URLs kept so old links and search results still work */}
+          <Route path="/home" element={<Navigate to="/" replace />} />
+          <Route path="/abulance" element={<Navigate to="/ambulance" replace />} />
+          <Route path="/ourprogram" element={<Navigate to="/service" replace />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
+      </main>
       <Footer />
-        </div>
+    </div>
   );
 }
-
-export default App;
